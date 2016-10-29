@@ -38,7 +38,7 @@ public:
 #ifdef LIBWPA_CLIENT_EXISTS
     int startSoftap(bool global_ctrl_iface, SocketClient *socketClient);
 #else
-    int startSoftap(bool global_ctrl_iface);
+    int startSoftap(bool global_ctrl_iface = false);
 #endif
     int stopSoftap();
     bool isSoftapStarted();

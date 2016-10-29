@@ -152,7 +152,7 @@ void *SoftapController::threadStart(void *obj){
 }
 #endif
 
-int SoftapController::startSoftap(bool global_ctrl_iface = false, SocketClient *socketClient = NULL) {
+int SoftapController::startSoftap(bool global_ctrl_iface, SocketClient *socketClient = NULL) {
     pid_t pid = 1;
     DIR *dir = NULL;
     int ret;
